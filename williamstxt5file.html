@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset= “utf-8”>
+         <title>DatzTuft</title>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">DatzTuft</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="williamstxtfile.html">Background</a></li>
+          <li><a href="williamstxt3file.html">Leave a Review</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="williamstxt2file.html">Services</a></li>
+          <!-- Add more links as needed -->
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+        <!-- Image banner -->
+      <img src="images/DatzTuft.jpg" alt="DatzTuft">
+    </section>
+    <section class="products">
+      <!-- Product grid -->
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 DatzTuft</p>
+    </footer>
+    <body>
+        <p><h1>DatzTuft Custom Rugs</h1></p>
+
+<h2>Reviews:</h2>
+<p> There aren't any reviews at this time please check back soon!</p>
+
+               <!-- Container to display submitted reviews -->
+    <!-- Container to display submitted reviews -->
+    <div id="submittedReviews"></div>
+
+    <script>
+      // Function to handle form submission
+      document.getElementById('reviewForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Get form data
+        var name = document.getElementById('name').value;
+        var review = document.getElementById('review').value;
+        var rating = document.getElementById('rating').value;
+  
+        // Construct HTML for the submitted review
+        var reviewHTML = '<div class="review">';
+        reviewHTML += '<h2>' + name + '</h2>';
+        reviewHTML += '<p>' + review + '</p>';
+        reviewHTML += '<p>Rating: ' + rating + '/5</p>';
+        reviewHTML += '</div>';
+  
+        // Append the submitted review to the container
+        document.getElementById('submittedReviews').innerHTML += reviewHTML;
+  
+        // Clear form fields after submission
+        document.getElementById('name').value = '';
+        document.getElementById('review').value = '';
+        document.getElementById('rating').value = '5'; // Reset rating to default
+      });
+    </script>
+    </body>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </body>
+    <footer class="footer">
+    </footer>
+  </html>
+
+
+
+         

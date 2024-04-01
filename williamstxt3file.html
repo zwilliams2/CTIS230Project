@@ -4,12 +4,39 @@
          <meta charset= “utf-8”>
          <title>DatzTuft</title>
     </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">DatzTuft</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="williamstxtfile.html">Background</a></li>
+          <li><a href="williamstxt2file.html">Services</a></li>
+          <li><a href="ContactUs.html">Contact US</a></li>
+            <li><a href="williamstxt5file.html">Reviews</a></li>
+<!-- Add more links as needed -->
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+    <img src="images/DatzTuft.jpg" alt="DatzTuft">
+    </section>
+    <section class="products">
+      <!-- Product grid -->
+    </section>
+    <footer class="footer">
+      <p>&copy; 2023 DatzTuft</p>
+    </footer>
     <body>
         <h1>DatzTuft Custom Rugs </h1>
     
 
 
-<h2>Reviews:</h2>
+<h2>Leave A Review: </h2>
 
 <p>Be the First to leave a Review!</p>
 
@@ -32,7 +59,7 @@
         width: 100%;
         padding: 8px;
         margin-bottom: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #aaa9a9;
         border-radius: 4px;
         box-sizing: border-box;
       }
@@ -40,7 +67,7 @@
         margin-bottom: 20px;
       }
       input[type="submit"] {
-        background-color: #007bff;
+        background-color: #000000;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -48,34 +75,76 @@
         cursor: pointer;
       }
       input[type="submit"]:hover {
-        background-color: #0056b3;
+        background-color: #000000;
       }
     </style>
   </head>
   <body>
-    <h1>Leave a Review</h1>
-    <form action="submit_review.php" method="post" enctype="multipart/form-data">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+    <form action="williamstxt3file.html" method="post" enctype="multipart/form-data">
+      <h2>Leave a Review</h2>
+      <form id="reviewForm">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="review">Your Review:</label><br>
+        <textarea id="review" name="review"></textarea><br>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+          <option value="5">5 stars</option>
+          <option value="4">4 stars</option>
+          <option value="3">3 stars</option>
+          <option value="2">2 stars</option>
+          <option value="1">1 star</option>
+        </select><br>
   
-      <label for="review">Tell us what you think!</label>
-      <textarea id="review" name="review" rows="4" required></textarea>
-  
-      <label for="image">Upload Image:</label>
+      <label for="image"><p>Upload Image:</p></label>
       <input type="file" id="image" name="image">
   
       <input type="submit" value="Submit Review">
+        <!-- Container to display submitted reviews -->
+  <div id="submittedReviews"></div>
+
+  <script>
+    // Function to handle form submission
+    document.getElementById('reviewForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      // Get form data
+      var name = document.getElementById('name').value;
+      var review = document.getElementById('review').value;
+      var rating = document.getElementById('rating').value;
+
+      // Construct HTML for the submitted review
+      var reviewHTML = '<div class="review">';
+      reviewHTML += '<h2>' + name + '</h2>';
+      reviewHTML += '<p>' + review + '</p>';
+      reviewHTML += '<p>Rating: ' + rating + '/5</p>';
+      reviewHTML += '</div>';
+
+      // Append the submitted review to the container
+      document.getElementById('submittedReviews').innerHTML += reviewHTML;
+
+      // Clear form fields after submission
+      document.getElementById('name').value = '';
+      document.getElementById('review').value = '';
+      document.getElementById('rating').value = '5'; // Reset rating to default
+    });
+  </script>
+</body>
+</html>
+
+      
     </form>
+  </body>
 
-
-<a href ="williamstxtfile.html">Background</a>
-<a href ="williamstxt2file.html">Services</a>
-<a href ="ContactUs.html">Contact US</a>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 
 
 
-    </body>
-
+    </script>
+  </body>
+  <footer class="footer">
+</footer>
 </html>
+
+

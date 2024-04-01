@@ -12,13 +12,13 @@
   
   /* Header styles */
   header {
-    background-color: #010000;
+    background-color: ff0000;
     padding: 20px;
   }
   
   .logo {
     display: inline-block;
-    width: 150px; /* Adjust size as needed */
+    width: 0px; /* Adjust size as needed */
   }
   
   /* Navigation styles */
@@ -38,11 +38,16 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: bold;
   }
   
-  /* slide show panel for images */
+  /* slide show panel for images in slideshow-container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  } 
   .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -101,3 +106,13 @@
     color: #000000;
     text-decoration: none;
   }
+  /* when the user presses the links chage the color when pressed, and when the user hovers over the link change the color */
+  nav ul li a:active {
+    color: #ff0000;
+  }
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+ 
+
+
