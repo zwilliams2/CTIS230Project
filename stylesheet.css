@@ -44,12 +44,7 @@
   
   /* slide show panel for images in slideshow-container */
   .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  } 
-  .slideshow-container {
-    max-width: 1000px;
+    max-width: 500px;
     position: relative;
     margin: auto;
   }
@@ -59,7 +54,7 @@
   }
 
   .slides img {
-    width: 100%;
+    width: 1000%;
     height: auto;
   }
   .fade {
@@ -114,5 +109,10 @@
     color: #ff0000;
   }
  
-
-
+img#Logo {
+  width: 1200px;
+}
+/* when the user hovers over the submit button change the color to red */
+input[type=submit]:hover {
+  background-color: #ff0000;
+}
