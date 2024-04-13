@@ -114,3 +114,45 @@
 input[type=submit]:hover {
   background-color: #ff0000;
 }
+/* add a query so that the left and right margins are smaller when the window width drops below a size of your choice */
+@media (max-width: 600px) {  
+  body {  
+      margin: 0.5em;  
+  }
+}
+@media screen and (orientation: landscape) {
+  .myElement {
+    font-size: 24px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .myElement {
+    font-size: 16px;
+  }
+}
+/* Standard desktop browser window that takes up most of the screen (and is therefore likely in landscape orientation) */
+  @media screen and (min-width: 800px) {
+      .myElement {
+      font-size: 24px;
+      }
+  }
+  /* Smaller desktop browser window that is likely in portrait orientation */
+  @media screen and (max-width: 799px) {
+      .myElement {
+      font-size: 16px;
+      }
+  }
+  /* Tablet-sized browser window */
+  @media screen and (max-width: 600px) {
+      .myElement {
+      font-size: 12px;
+      }
+  }
+  /* Smartphone-sized browser window */
+  @media screen and (max-width: 400px) {
+      .myElement {
+      font-size: 8px;
+      }
+  }
+  
