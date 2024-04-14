@@ -158,27 +158,67 @@ input[type=submit]:hover {
   img#Logo {
     width: 1200px;
     height: 1200px;
+    float: top, left;
   }
   img#Logo2 {
     width: 120px;
     height: 120px;
+    float: top, left;
   }
   img#Logo3 {
     width: 1200px;
     height: 120px;
+    float: top, left;  
+     
   }
   img#Logo4 {
     width: 1200px;
     height: 120px;
+    float: top, left;  
+    
   }
   img#Logo5 {
     width: 1200px;
     height: 120px;
+    float: top, left;  
+     
   }
   img#Logo6 {
     width: 1200px;
     height: 120px;
+    float: top, left;  
+   
   }
- 
-
+  /* make the pages fit the screen for smartphones */
+  @media screen and (max-width: 400px) {
+    .myElement {
+    font-size: 8px;
+    }
+  }
+  /* make the pages fit the screen for tablets */
+  @media screen and (max-width: 600px) {
+    .myElement {
+    font-size: 12px;
+    }
+  }
+  /* make the pages fit the screen for smaller desktops */
+  @media screen and (max-width: 799px) {
+    .myElement {
+    font-size: 16px;
+    }
+  }
+  /* make the pages fit the screen for larger desktops */
+  @media screen and (min-width: 800px) {
+    .myElement {
+    font-size: 24px;
+    }
+  }
+  /* make the pages fit the screen for standard desktops */
+  @media screen and (min-width: 1024px) {
+    .myElement {
+    font-size: 24px;
+    }
+  }
   
+
+
